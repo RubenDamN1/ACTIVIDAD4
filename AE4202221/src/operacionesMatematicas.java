@@ -47,8 +47,10 @@ public class operacionesMatematicas {
 	}
 
 	private static int divisionEntera(int numero1, int numero2) {
-		int divisionE;
-		divisionE = numero1 / numero2;
+		int divisionE=0;
+		//modifico esta parte para evitar division por cero
+		if(numero2!=0)
+			divisionE = numero1 / numero2;			
 		return divisionE;
 	}
 
